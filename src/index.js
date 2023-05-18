@@ -1,13 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createRoot } from 'react-dom/client';
+import { CssBaseline } from '@mui/material';
+import 'bootstrap/dist/css/bootstrap.min.css';  
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const theme = createTheme({
+    palette:{
+        mode:'light',
+    },
+})
+
+const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    
+        <ThemeProvider theme={theme}>
+            <CssBaseline/>
+            <App />
+        </ThemeProvider>
+    
   </React.StrictMode>
 );
 
