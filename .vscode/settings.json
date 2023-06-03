@@ -1,11 +1,10 @@
 {
-    "compile-hero.disable-compile-files-on-did-save-code": true,
-    "cSpell.enableFiletypes": [
-        "javascript"
-    ],
-    "gitlens.advanced.blame.sizeThresholdAfterEdit": 5000,
-    "extends": "stylelint-config-standard-scss",
-    "customSyntax": "postcss-html",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "cSpell.enableFiletypes": ["javascript"],
+  "gitlens.advanced.blame.sizeThresholdAfterEdit": 5000,
+  "extends": "stylelint-config-standard-scss",
+  "customSyntax": "postcss-html",
+  "editor.mouseWheelZoom": true,
   "extends": [
     "stylelint-config-html",
     "stylelint-config-recommended-scss",
@@ -31,5 +30,8 @@
         "resolveNestedSelectors": true
       }
     ]
-  }
+  },
+  "editor.fontSize": 10,
+  "window.commandCenter": true,
+  "editor.dropIntoEditor.enabled": true
 }

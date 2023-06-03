@@ -1,6 +1,0 @@
-function ColumnInListOfEntrant(text, name){
-    document.querySelector('#demo').innerHTML = `<FormGroup>< Label for= '${name}' > ${text}:</ ><Input type='text' name='${name}' onChange={this.onChange} value={this.state.${name} === '' ? '' : this.state.${name}} /></FormGroup >`;
-}
-
-export default ColumnInListOfEntrant;
-
